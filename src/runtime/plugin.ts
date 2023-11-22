@@ -1,6 +1,5 @@
 import Rollbar from 'rollbar';
 import { consola } from 'consola';
-import { name, version } from '../../package.json';
 
 const isValidAccessToken = (accessToken: unknown): accessToken is string => {
   return typeof accessToken === 'string' && accessToken.length > 0;
@@ -8,7 +7,7 @@ const isValidAccessToken = (accessToken: unknown): accessToken is string => {
 
 const warn = (...args: any[]) => {
   if (process.env.NODE_ENV === 'development') {
-    consola.warn(`${name}:${version}`, ...args);
+    consola.warn('nuxt-rollbar', ...args);
   }
 };
 
