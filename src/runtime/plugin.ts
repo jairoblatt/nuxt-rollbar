@@ -1,6 +1,6 @@
 import { defineNuxtPlugin } from '#imports';
 import { consola } from 'consola';
-import * as Rollbar from 'rollbar';
+import * as pkg from 'rollbar';
 
 const isValidAccessToken = (accessToken: unknown): accessToken is string => {
   return typeof accessToken === 'string' && accessToken.length > 0;
@@ -25,7 +25,7 @@ export default defineNuxtPlugin(({ $config }) => {
     );
   }
 
-  const rollbar = new Rollbar.default({
+  const rollbar = new pkg.default({
     ...(options || {}),
     accessToken,
   });
