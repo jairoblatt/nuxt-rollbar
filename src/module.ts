@@ -38,6 +38,11 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt: '^3',
     },
   },
+  hooks: {
+    'vite:extendConfig': (config) => {
+      config.optimizeDeps?.include?.push('rollbar');
+    },
+  },
   defaults: {
     serverAccessToken: '',
     clientAccessToken: '',
@@ -54,6 +59,7 @@ export default defineNuxtModule<ModuleOptions>({
     );
 
     nuxt.options.build.transpile.push(resolve('runtime'));
+    nuxt.options.build.transpile.push('rollbar');
 
     addImports([
       {
