@@ -16,7 +16,10 @@
     "nuxt",
     "nuxt3",
     "rollbar",
-    "analytics"
+    "tracking",
+    "logging",
+    "debugging",
+    "error"
   ],
   "exports": {
     ".": {
@@ -47,6 +50,7 @@
     "@nuxt/kit": "^3.7.1",
     "defu": "^6.1.2",
     "pathe": "^1.1.1",
+    "consola": "^3.2.3",
     "rollbar": "^2.26.2"
   },
   "devDependencies": {
@@ -56,7 +60,6 @@
     "nuxt-rollbar": "workspace:*",
     "@types/node": "^20.5.9",
     "bumpp": "^9.2.0",
-    "consola": "^3.2.3",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "nuxt": "^3.7.1",
