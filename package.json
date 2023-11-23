@@ -1,7 +1,7 @@
 {
   "name": "nuxt-rollbar",
   "type": "module",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "packageManager": "pnpm@8.7.4",
   "description": "Rollbar module for Nuxt 3",
   "author": "Jairo Blatt <jairoblattc@gmail.com>",
