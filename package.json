@@ -50,7 +50,8 @@
     "@nuxt/kit": "^3.7.1",
     "consola": "^3.2.3",
     "defu": "^6.1.2",
-    "pathe": "^1.1.1"
+    "pathe": "^1.1.1",
+    "rollbar": "^2.26.2"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
@@ -63,7 +64,6 @@
     "nuxt": "^3.7.1",
     "nuxt-rollbar": "workspace:*",
     "prettier": "^3.0.3",
-    "rollbar": "^2.26.2",
     "typescript": "^5.2.2",
     "vue-tsc": "^1.8.10"
   }
