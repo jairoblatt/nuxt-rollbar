@@ -3,8 +3,6 @@ const { rollbar: rollbarPublic } = useRuntimeConfig().public;
 
 const rollbar = useRollbar();
 
-console.log({ rollbar });
-
 function trackLog() {
   rollbar.log('Hello from Nuxt 3!');
 }
