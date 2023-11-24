@@ -59,7 +59,10 @@ export default defineNuxtModule<ModuleOptions>({
     );
 
     nuxt.options.build.transpile.push(resolve('runtime'));
-    nuxt.options.build.transpile.push('rollbar');
+
+    if (process.env.NODE_ENV === 'development') {
+      nuxt.options.build.transpile.push('rollbar');
+    }
 
     addImports([
       {
