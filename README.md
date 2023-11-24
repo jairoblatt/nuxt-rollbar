@@ -144,7 +144,8 @@ Special thanks to:
 
 - **[nuxt-plausible](https://github.com/nuxt-modules/plausible)**
 - **[nuxt-rollbar-module](https://github.com/gaelreyrol/nuxt-rollbar-module)**
-  Appreciate the inspiration and groundwork provided.
+
+Appreciate the inspiration and groundwork provided.
 
 ## License
 
