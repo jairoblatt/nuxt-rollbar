@@ -26,7 +26,7 @@ export default defineNuxtPlugin(({ $config }) => {
   }
 
   const rollbar = new Rollbar({
-    ...(options || {}),
+    ...(options?.config || {}),
     accessToken,
   });
 
