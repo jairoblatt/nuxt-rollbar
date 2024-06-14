@@ -35,7 +35,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'rollbar',
     compatibility: {
-      nuxt: '^3',
+      nuxt: '>=3',
     },
   },
   hooks: {
