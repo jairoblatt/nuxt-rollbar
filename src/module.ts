@@ -1,5 +1,6 @@
 import { defu } from 'defu';
 import { addImports, addPlugin, createResolver, defineNuxtModule } from '@nuxt/kit';
+import type { Configuration } from 'rollbar';
 import { name, version } from '../package.json';
 
 export interface ModuleOptions {
@@ -26,7 +27,7 @@ export interface ModuleOptions {
    * @description
    * Rollbar configuration options.
    */
-  config?: any;
+  config?: Configuration;
 }
 
 export default defineNuxtModule<ModuleOptions>({
