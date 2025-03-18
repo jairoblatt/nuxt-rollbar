@@ -16,10 +16,10 @@ export default defineNuxtPlugin(({ $config }) => {
   const { clientAccessToken, ...options } = $config.public.rollbar;
   const serverAccessToken = $config.__rollbarServerAccessToken;
 
-  const accessToken = process.client ? clientAccessToken : serverAccessToken;
+  const accessToken = import.meta.client ? clientAccessToken : serverAccessToken;
 
   if (!isValidAccessToken(accessToken)) {
-    const side = process.client ? 'client' : 'server';
+    const side = import.meta.client ? 'client' : 'server';
     return warn(
       `Skipping Rollbar initialization on ${side} side. Please provide a valid ${side}AccessToken.`,
     );
