@@ -9,14 +9,7 @@
 ## Setup
 
 ```bash
-# pnpm
-pnpm add -D nuxt-rollbar
-
-# npm
-npm i -D nuxt-rollbar
-
-# yarn
-yarn add -D nuxt-rollbar
+npx nuxi@latest module add rollbar
 ```
 
 ## Basic Usage
